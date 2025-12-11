@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { Container } from "./Container";
 import { NavLink } from "./NavLink";
 
@@ -8,12 +7,14 @@ interface NavBarProps {
 }
 
 export default function NavBar({ className }: NavBarProps) {
-    const navigate = useNavigate();
     const [showMobileMenu, setShowMobileMenu] = useState(false);
 
     return (
-        <nav className="w-full bg-white border-b">
-            <Container>
+        <nav className={`w-full ${className}`}>
+            <Container className="flex justify-between py-4">
+                <div className="px-12">
+                    <NavLink href="/">Gary Kono</NavLink>
+                </div>
                 <ul className="flex gap-6">
                     <li><NavLink href="/#home">Home</NavLink></li>
                     <li><NavLink href="/#projects">Projects</NavLink></li>

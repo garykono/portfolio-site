@@ -8,7 +8,7 @@ export default function Root() {
 
     return (
         <div className="">
-            <div className="">
+            <div className="sticky top-0 z-50 bg-brand-bg">
                 <NavBar />
             </div>
             <div className="">
