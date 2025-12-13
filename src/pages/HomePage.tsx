@@ -7,7 +7,6 @@ import aboutMe from "../assets/rainier-river.jpeg";
 import { Card } from "../components/Card";
 import { Chip } from "../components/Chip";
 import { ChipGroup } from "../components/ChipGroup";
-import { ProjectCard } from "../components/ProjectCard";
 import { siteConfig } from "../config/site";
 
 export default function HomePage() {
