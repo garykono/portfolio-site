@@ -70,7 +70,7 @@ export default function HomePage() {
                             <h2 className="heading-2">Skill Snapshot</h2>
                             <div className="mx-auto mt-3 h-[2px] w-16 bg-brand-accent/40 rounded-full" />
                         </div>
-                        <div className="flex gap-4">
+                        <div className="flex gap-4 sm:gap-6">
                             <SkillCard
                                 title="Frontend"
                                 items={["React", "TS", "Vite", "Tailwind"]}
