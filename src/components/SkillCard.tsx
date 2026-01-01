@@ -13,8 +13,8 @@ export function SkillCard({ title, items = [], className = "" }: SkillCardProps)
             <h3 className="heading-4 text-center">{title}</h3>
             <DotList items={items} className="hidden md:flex" />
             <ul className="md:hidden flex flex-col gap-2 list-disc px-2 sm:px-4">
-                {items.map((item) => {
-                    return <li className="text-body">{item}</li>
+                {items.map((item, index) => {
+                    return <li className="text-body" key={index}>{item}</li>
                 })}
             </ul>
         </Card>

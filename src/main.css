@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-/* Font */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swa");
-
 @theme {
     /* Default sans font for `font-sans` */
     --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
